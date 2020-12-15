@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Les listes</title>
+  <style type="text/css">
+  	body {
+  		background-color: #272822;
+  		color: #fff;
+  		font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+  	}
+  	.header {
+      position: fixed;
+      top: 0;
+      height: 80px;
+      width: 100%;
+      background: white;
+      color: #FF5733;
+      z-index: 1;
+    }
+    h1 {
+      line-height: 80px;
+      text-align: center;
+      margin: 0;
+    }
+    .main-layout {
+      width: 90%;
+      max-width: 780px;
+      padding: 24px;
+      display: flex;
+      margin: 80px auto 0 auto;
+
+    }
+    .section-layout {
+      display: block;
+      height: 1000px; 
+      flex: calc(50% - 12px);
+      background-color: #85C1E9;
+      position: relative;
+      border-radius: 6px;
+    }
+    .section-layout:first-child {
+      background-color: #48C9B0;
+      margin-right: 24px;
+    }
+    .coucou {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <h1>Titre de mon site</h1>
+</header>
+<main class="main-layout">
+  <section class="section-layout">
+    <h2>Mon contenu à gauche</h2>
+  </section>
+  <section class="section-layout">
+    <h2>Mon contenu à droite</h2>
+    <aside class="coucou" style="color: red;">Fermer</aside>
+  </section>
+</main>
+
+</body>
+</html>
